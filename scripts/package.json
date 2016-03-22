@@ -1,0 +1,28 @@
+{
+  "name": "etsy",
+  "version": "1.0.0",
+  "description": "Making an etsy page",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NJHawthorne/Etsy-Page.git"
+  },
+  "keywords": [
+    "etsy",
+    "javascript",
+    "jquery",
+    "ajax"
+  ],
+  "author": "Nate Hawthorne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NJHawthorne/Etsy-Page/issues"
+  },
+  "homepage": "https://github.com/NJHawthorne/Etsy-Page#readme",
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}
