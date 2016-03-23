@@ -1,0 +1,18 @@
+.itemContainer {
+  width: 15.7%;
+  margin: 1em;
+  display: inline-block;
+  border: 1px solid #777; }
+  .itemContainer a:link {
+    color: #000;
+    text-decoration: none; }
+    .itemContainer a:link h3 {
+      font-size: 0.8em; }
+    .itemContainer a:link span {
+      font-size: 1em;
+      color: #AAA; }
+    .itemContainer a:link .itemPrice {
+      color: #80C053;
+      float: right; }
+
+/*# sourceMappingURL=main.css.map */

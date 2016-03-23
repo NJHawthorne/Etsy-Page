@@ -1,12 +1,18 @@
 var manageData = function(data) {
 	var displayResults = $('.search-result-section');
 	data.results.forEach(function(value, index, array) {
-		var newResultTitle = $('<div class="itemTitle"></div>', {'title': value.title}).html(value.title);
-		var newResultMaker = $('<div class="itemMaker"></div>', {'title': value.title}).html(value.Shop.shop_name);
-		var newResultPrice = $('<div class="itemPrice"></div>', {'title': value.title}).html(value.price);
-		displayResults.append(newResultTitle);
-		displayResults.append(newResultMaker);
-		displayResults.append(newResultPrice);
+		var container = $('<div class="itemContainer"></div>');
+		var containerLink = $('<a></a>', {'href': value.Shop.url});
+		var newResultItem = $('<img/>', {'src': value.Images[0].url_170x135});
+		var newResultTitle = $('<h3 class="itemTitle"></h3>', {'title': value.title}).html(value.title);
+		var newResultMaker = $('<span class="itemMaker"></span>', {'title': value.title}).html(value.Shop.shop_name);
+		var newResultPrice = $('<span class="itemPrice"></span>', {'title': value.title}).html(value.price); 
+		containerLink.append(newResultItem);
+		containerLink.append(newResultTitle);
+		containerLink.append(newResultMaker);
+		containerLink.append(newResultPrice);
+		container.append(containerLink);
+		displayResults.append(container);
 	});
 };
 
