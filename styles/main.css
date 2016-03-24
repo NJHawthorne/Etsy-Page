@@ -1,18 +1,52 @@
-.itemContainer {
-  width: 15.7%;
-  margin: 1em;
-  display: inline-block;
-  border: 1px solid #777; }
-  .itemContainer a:link {
-    color: #000;
-    text-decoration: none; }
-    .itemContainer a:link h3 {
-      font-size: 0.8em; }
-    .itemContainer a:link span {
-      font-size: 1em;
-      color: #AAA; }
-    .itemContainer a:link .itemPrice {
-      color: #80C053;
-      float: right; }
+body {
+  background-color: #E8E8E4; }
+  body section {
+    width: 80%;
+    margin: 0 auto; }
+    body section .itemContainer {
+      width: 25%;
+      margin: 2em;
+      display: inline-block;
+      border: 1px solid #CCC;
+      background-color: #fff; }
+      body section .itemContainer a:link {
+        color: #000;
+        text-decoration: none; }
+        body section .itemContainer a:link img {
+          max-width: 100%;
+          object-position: center; }
+        body section .itemContainer a:link h3 {
+          margin: 0.1em 0;
+          font-size: 0.8em;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          font-weight: 300; }
+        body section .itemContainer a:link span {
+          font-size: 0.8em;
+          color: #AAA; }
+        body section .itemContainer a:link .itemPrice {
+          margin-top: 0.2em;
+          color: #80C053;
+          float: right; }
+      body section .itemContainer a:visited {
+        color: #000;
+        text-decoration: none; }
+        body section .itemContainer a:visited img {
+          max-width: 100%;
+          object-position: center; }
+        body section .itemContainer a:visited h3 {
+          margin: 0.1em 0;
+          font-size: 0.8em;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          font-weight: 300; }
+        body section .itemContainer a:visited span {
+          font-size: 0.8em;
+          color: #AAA; }
+        body section .itemContainer a:visited .itemPrice {
+          color: #80C053;
+          float: right; }
 
 /*# sourceMappingURL=main.css.map */
